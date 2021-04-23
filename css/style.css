@@ -1,28 +1,41 @@
-.child-box{
-	width: 150px;
-	height: 150px;
 	background-color: blue;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%) rotate(45deg);
+.background {
+    position: relative;
 }
-.wraper {
-	position: relative;
-	width: 400px;
-	height: 400px;
-	background-color: yellow;
+.harry {
+	position: absolute;
+	transform: translate(-50%,-50%) rotate(45deg);
+	right: 100px;
+	transform: rotate(-10deg);
+	width: 500px;
+	height: 200px;
+	animation: harry 40s infinite;
+	animation-duration: 30s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: harry;
 }
 
-/*.wraper:hover {
-	background-color: red;
+@keyframes harry {
+0% {right: 100px; */}
+100% {right: 1500px;}
 }
-.child-box:hover{
-	background-color: white;
-	width: 250px;
-	transform: translate(-50%, -50%); rotate(0deg);
-}*/
-.wraper:hover .child-box{
-	background-color: grey;
-	width: 250px;
+
+.snich {
+	position: absolute;
+	top: 450px;
+	right: 300px;
+	transform: rotate(-5deg);
+	width: 100px;
+	height: 100px;
+	animation: snich 20s infinite;
+	
+}
+@keyframes snich {
+0% {right: 150px;}
+100% {right: 1550px;}
 }
